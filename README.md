@@ -68,7 +68,7 @@ Ejercicios de las asignaturas **Programación en Java y Base de Datos MySQL**
 		<td width="300">
 			Uso de la variable Session en request.session() para pasar elementos de un psj a otro.
 		</td>
-		<td width="450"><img height="250" src="imas/Clase_Linea01.png" alt="Clase Linea"></td>
+		<td width="450"><img height="250" src="imas/ArrayList_01.png" alt="ArrayList_01"></td>
 	</tr>
 	<tr>
 		<td width="300">
