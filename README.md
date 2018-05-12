@@ -62,7 +62,7 @@ Ejercicios de las asignaturas **Programación en Java y Base de Datos MySQL**
 			La función esta en la ruta: Source Packages/mangoFunciones/operar.java<br>
 			Ver archivos: crearPedido.jsp - ingresaLineaPedido.jsp - ingresaPedido.jsp
 		</td>
-		<td width="300"><img height="150" src="imas/compVacio.jpg" alt="compVacio"></td>
+		<td width="300"><img src="imas/compVacio.jpg" alt="compVacio"></td>
 	</tr>
 	<tr>
 		<td width="300">
