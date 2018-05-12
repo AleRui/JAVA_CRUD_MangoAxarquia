@@ -16,37 +16,37 @@ Ejercicios de las asignaturas **Programación en Java y Base de Datos MySQL**
 ## Version 2.0: Cambios Realizados
 <ul>
 	<li>
-		<divwidth="40%">
+		<div width="40%">
 			Estructuración del contenido de los ficheros dentro del proyecto de acuerdo con el punto de vista de patrón de diseño de arquitectura de software Modelo-Vista-Contralador.
 		</div>
-		<divwidth="40%"><img height="250" src="imas/esquema.jpg" alt="Estructuración"></div>
+		<div width="40%"><img height="250" src="imas/esquema.jpg" alt="Estructuración"></div>
 	</li>
 	<li>
-		<divwidth="40%">
+		<div width="40%">
 			Para hacer menos pesado el código se han externalizado los elementos comunes de las webs: header, navbar, footer... Y se han introducido en los jsp mediante:<br>
 			~~~
 			<%@include file="../esquema/header.jsp"%>
 			~~~
 		</div>
-		<divwidth="40%"><img height="250" src="imas/includes.jpg" alt="includes"></div>
+		<div width="40%"><img height="250" src="imas/includes.jpg" alt="includes"></div>
 	</li>
 	<li>
-		<divwidth="40%">
+		<div width="40%">
 			Cambios en la estructura de la base de datos. Ver archivo bd/cambios_BD_mangos_CRUD_II.sql<br>
 			Hay también una copia de la base de datos: Backup_mangos
 		</div>
-		<divwidth="40%"><img height="250" src="imas/model.jpg" alt="Modelo"></div>
+		<div width="40%"><img height="250" src="imas/model.jpg" alt="Modelo"></div>
 	</li>
 	<li>
-		<divwidth="40%">
+		<div width="40%">
 			Creación de la clase Linea para manejar las líneas del pedido.<br>
 			La clase esta en la ruta: Source Packages/mangoObjetos/linea.javabr>
 			Ver archivos: crearPedido.jsp - ingresaLineaPedido.jsp - ingresaPedido.jsp
 		</div>
-		<divwidth="40%"><img height="250" src="imas/Clase_Linea01.png" alt="Clase Linea"></div>
+		<div width="40%"><img height="250" src="imas/Clase_Linea01.png" alt="Clase Linea"></div>
 	</li>
 	<li>
-		<divwidth="40%">
+		<div width="40%">
 			Uso de ArrayList para contener los objetos linea del pedido e ir actualizandolos.<br>
 			Ver archivos: crearPedido.jsp - ingresaLineaPedido.jsp - ingresaPedido.jsp<br>
 			~~~
@@ -54,55 +54,55 @@ Ejercicios de las asignaturas **Programación en Java y Base de Datos MySQL**
 	  	conjLineas = (ArrayList<Linea>) request.getSession().getAttribute("conjLineas");
 			~~~
 		</div>
-		<divwidth="40%"><img height="250" src="imas/ArrayList.png" alt="ArrayList"></div>
+		<div width="40%"><img height="250" src="imas/ArrayList.png" alt="ArrayList"></div>
 	</li>
 	<li>
-		<divwidth="40%">
+		<div width="40%">
 			Creación de la operar.compVacio() Para comprobar si un String viene vacio.<br>
 			La función esta en la ruta: Source Packages/mangoFunciones/operar.java<br>
 			Ver archivos: crearPedido.jsp - ingresaLineaPedido.jsp - ingresaPedido.jsp
 		</div>
-		<divwidth="40%"><img height="250" src="imas/compVacio.png" alt="Clase Linea"></div>
+		<div width="40%"><img height="250" src="imas/compVacio.png" alt="Clase Linea"></div>
 	</li>
 	<li>
-		<divwidth="40%">
+		<div width="40%">
 			Uso de la variable Session en request.session() para pasar elementos de un psj a otro.
 		</div>
-		<divwidth="40%"><img height="250" src="imas/Clase_Linea01.png" alt="Clase Linea"></div>
+		<div width="40%"><img height="250" src="imas/Clase_Linea01.png" alt="Clase Linea"></div>
 	</li>
 	<li>
-		<divwidth="40%">
+		<div width="40%">
 			Eliminar elementos de la variable Session cuando se haya terminado de realizar un pedido o al salir a otra zona de la web.
 		</div>
-		<divwidth="40%"><img height="250" src="#" alt="Clase Linea"></div>
+		<div width="40%"><img height="250" src="#" alt="Clase Linea"></div>
 	</li>
 	<li>
-		<divwidth="40%">
+		<div width="40%">
 			Mantener el usuario mientras va añadiendo líneas javascript+java.<br>
 			Ver archivos: crearPedido.jsp - ingresaLineaPedido.jsp - ingresaPedido.jsp - formulario.js
 		</div>
-		<divwidth="40%"><img height="250" src="imas/ArrayList.png" alt="Clase Linea"></div>
+		<div width="40%"><img height="250" src="imas/ArrayList.png" alt="Clase Linea"></div>
 	</li>
 	<li>
-		<divwidth="40%">
+		<div width="40%">
 			Ingreso de Factura con varias Líneas de pedido.
 		</div>
-		<divwidth="40%"><img height="250" src="imas/ArrayList.png" alt="Clase Linea"></div>
+		<div width="40%"><img height="250" src="imas/ArrayList.png" alt="Clase Linea"></div>
 	</li>
 	<li>
-		<divwidth="40%">
+		<div width="40%">
 			Consulta de pedido.
 		</div>
-		<divwidth="40%"><img height="250" src="imas/listaPedidos.png" alt="Clase Linea"></div>
+		<div width="40%"><img height="250" src="imas/listaPedidos.png" alt="Clase Linea"></div>
 	</li>
 	<li>
-		<divwidth="40%">
+		<div width="40%">
 			Validaciones de campos desde el navegador con javascript. Observar campos de Clientes: no se admite un DNI o Teléfono de una longitud distinta de 9. (" Para una futura versión esto se debería de controlar con patrones").
 		</div>
-		<divwidth="40%"><img height="250" src="imas/alertaNIF.jpg" alt="Clase Linea"></div>
+		<div width="40%"><img height="250" src="imas/alertaNIF.jpg" alt="Clase Linea"></div>
 	</li>
 	<li>
-		<divwidth="40%">
+		<div width="40%">
 			Control de valores de inserción en la BD del controlador.
 			<ul>
 				<li>No se puede introducir un pedido sin comprador.</li>
@@ -110,19 +110,19 @@ Ejercicios de las asignaturas **Programación en Java y Base de Datos MySQL**
 				<li>No se puede introducir un pedido sin cantidad.</li>
 			</ul>
 		</div>
-		<divwidth="40%"><img height="250" src="imas/pedidoSinComp.png" alt="Clase Linea"></div>
+		<div width="40%"><img height="250" src="imas/pedidoSinComp.png" alt="Clase Linea"></div>
 	</li>
 	<li>
-		<divwidth="40%">
+		<div width="40%">
 			Ventanas de alerta a la hora de borrar una variedad, un cliente o un pedido.
 		</div>
-		<divwidth="40%"><img height="250" src="imas/alertaBorrarPedido.png" alt="Clase Linea"></div>
+		<div width="40%"><img height="250" src="imas/alertaBorrarPedido.png" alt="Clase Linea"></div>
 	</li>
 	<li>
-		<divwidth="40%">
+		<div width="40%">
 			Creación de alertas para mostrar al usuario porque no se ha podido realizar una tarea.
 		</div>
-		<divwidth="40%"><img height="250" src="imas/pedidoSinComp.jpg" alt="Clase Linea"></div>
+		<div width="40%"><img height="250" src="imas/pedidoSinComp.jpg" alt="Clase Linea"></div>
 	</li>
 
 ## Cambios Propuestas para Version 3.0:
