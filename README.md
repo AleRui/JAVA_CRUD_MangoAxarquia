@@ -19,7 +19,7 @@ Ejercicios de las asignaturas **Programación en Java y Base de Datos MySQL**
 		<td width="300">
 			Estructuración del contenido de los ficheros dentro del proyecto de acuerdo con el punto de vista de patrón de diseño de arquitectura de software Modelo-Vista-Contralador.
 		</td>
-		<td width="300"><img height="250" src="imas/esquema.jpg" alt="Estructuración"></td>
+		<td width="450"><img height="250" src="imas/esquema.jpg" alt="Estructuración"></td>
 	</tr>
 	<tr>
 		<td width="300">
@@ -28,14 +28,14 @@ Ejercicios de las asignaturas **Programación en Java y Base de Datos MySQL**
 			<%@include file="../esquema/header.jsp"%>
 			~~~
 		</td>
-		<td width="300"><img height="250" src="imas/includes.jpg" alt="includes"></td>
+		<td width="450"><img height="250" src="imas/includes.jpg" alt="includes"></td>
 	</tr>
 	<tr>
 		<td width="300">
 			Cambios en la estructura de la base de datos. Ver archivo bd/cambios_BD_mangos_CRUD_II.sql<br>
 			Hay también una copia de la base de datos: Backup_mangos
 		</td>
-		<td width="300"><img height="250" src="imas/model.jpg" alt="Modelo"></td>
+		<td width="450"><img height="250" src="imas/model.jpg" alt="Modelo"></td>
 	</tr>
 	<tr>
 		<td width="300">
@@ -43,7 +43,7 @@ Ejercicios de las asignaturas **Programación en Java y Base de Datos MySQL**
 			La clase esta en la ruta: Source Packages/mangoObjetos/linea.javabr>
 			Ver archivos: crearPedido.jsp - ingresaLineaPedido.jsp - ingresaPedido.jsp
 		</td>
-		<td width="300"><img height="250" src="imas/Clase_Linea01.png" alt="Clase Linea"></td>
+		<td width="450"><img height="250" src="imas/Clase_Linea01.png" alt="Clase Linea"></td>
 	</tr>
 	<tr>
 		<td width="300">
@@ -54,7 +54,7 @@ Ejercicios de las asignaturas **Programación en Java y Base de Datos MySQL**
 	  	conjLineas = (ArrayList<Linea>) request.getSession().getAttribute("conjLineas");
 			~~~
 		</td>
-		<td width="300"><img height="250" src="imas/ArrayList_01.png" alt="ArrayList"></td>
+		<td width="450"><img height="250" src="imas/ArrayList_01.png" alt="ArrayList"></td>
 	</tr>
 	<tr>
 		<td width="300">
@@ -68,7 +68,7 @@ Ejercicios de las asignaturas **Programación en Java y Base de Datos MySQL**
 		<td width="300">
 			Uso de la variable Session en request.session() para pasar elementos de un psj a otro.
 		</td>
-		<td width="300"><img height="250" src="imas/Clase_Linea01.png" alt="Clase Linea"></td>
+		<td width="450"><img height="250" src="imas/Clase_Linea01.png" alt="Clase Linea"></td>
 	</tr>
 	<tr>
 		<td width="300">
@@ -80,25 +80,25 @@ Ejercicios de las asignaturas **Programación en Java y Base de Datos MySQL**
 			Mantener el usuario mientras va añadiendo líneas javascript+java.<br>
 			Ver archivos: crearPedido.jsp - ingresaLineaPedido.jsp - ingresaPedido.jsp - formulario.js
 		</td>
-		<td width="300"><img height="250" src="imas/ArrayList_01.png" alt="ArrayList_01"></td>
+		<td width="450"><img height="250" src="imas/ArrayList_01.png" alt="ArrayList_01"></td>
 	</tr>
 	<tr>
 		<td width="300">
 			Ingreso de Factura con varias Líneas de pedido.
 		</td>
-		<td width="300"><img height="250" src="imas/ArrayList_01.png" alt="ArrayList_01"></td>
+		<td width="450"><img height="250" src="imas/ArrayList_01.png" alt="ArrayList_01"></td>
 	</tr>
 	<tr>
 		<td width="300">
 			Consulta de pedido.
 		</td>
-		<td width="300"><img height="250" src="imas/listaPedidos.png" alt="listaPedidos"></td>
+		<td width="450"><img height="250" src="imas/listaPedidos.png" alt="listaPedidos"></td>
 	</tr>
 	<tr>
 		<td width="300">
 			Validaciones de campos desde el navegador con javascript. Observar campos de Clientes: no se admite un DNI o Teléfono de una longitud distinta de 9. (" Para una futura versión esto se debería de controlar con patrones").
 		</td>
-		<td width="300"><img height="250" src="imas/alertaNIF.jpg" alt="alertaNIF"></td>
+		<td width="450"><img height="250" src="imas/alertaNIF.jpg" alt="alertaNIF"></td>
 	</tr>
 	<tr>
 		<td width="300">
@@ -109,19 +109,19 @@ Ejercicios de las asignaturas **Programación en Java y Base de Datos MySQL**
 				<tr>No se puede introducir un pedido sin cantidad.</tr>
 			</ul>
 		</td>
-		<td width="300"><img height="250" src="imas/pedidoSinComp.png" alt="pedidoSinComp"></td>
+		<td width="450"><img height="250" src="imas/pedidoSinComp.png" alt="pedidoSinComp"></td>
 	</tr>
 	<tr>
 		<td width="300">
 			Ventanas de alerta a la hora de borrar una variedad, un cliente o un pedido.
 		</td>
-		<td width="300"><img height="250" src="imas/alertaBorrarPedido.png" alt="alertaBorrarPedido"></td>
+		<td width="450"><img height="250" src="imas/alertaBorrarPedido.png" alt="alertaBorrarPedido"></td>
 	</tr>
 	<tr>
 		<td width="300">
 			Creación de alertas para mostrar al usuario porque no se ha podido realizar una tarea.
 		</td>
-		<td width="300"><img height="250" src="imas/pedidoSinComp.jpg" alt="pedidoSinComp"></td>
+		<td width="450"><img height="250" src="imas/pedidoSinComp.jpg" alt="pedidoSinComp"></td>
 	</tr>
 </table>
 
