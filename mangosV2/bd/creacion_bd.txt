@@ -1,0 +1,299 @@
++--------------------------------------------+
+| Catalog Diff Report                        |
++--------------------------------------------+
+Table `mydb`.`DET_FACT` was dropped
+Table `mydb`.`FACTURA` was dropped
+Table `mydb`.`COMPRADOR` was dropped
+Table `mydb`.`MANGOS` was dropped
+Table `mydb`.`autores` was created
+  columns:
+  - codAut of type INT
+  - nomAut of type VARCHAR
+  __
+  indices:
+  - PRIMARY with columns: codAut
+  __
+  attributes:
+  - engine: InnoDB
+  - default character set: utf8
+  __
+Table `mydb`.`ciudades` was created
+  columns:
+  - codCiu of type INT
+  - nomCiu of type VARCHAR
+  __
+  indices:
+  - PRIMARY with columns: codCiu
+  __
+  attributes:
+  - engine: InnoDB
+  - default character set: utf8
+  __
+Table `mydb`.`clientes` was created
+  columns:
+  - codCli of type INT
+  - nomCli of type VARCHAR
+  - priApeCli of type VARCHAR
+  - segApeCli of type VARCHAR
+  - telCli of type VARCHAR
+  - dirCli of type VARCHAR
+  - emailCli of type VARCHAR
+  __
+  indices:
+  - PRIMARY with columns: codCli
+  __
+  attributes:
+  - engine: InnoDB
+  - default character set: utf8
+  __
+Table `mydb`.`departamento` was created
+  columns:
+  - codDep of type INT
+  - nomDep of type VARCHAR
+  - numDespDep of type INT
+  - jefDEp of type INT
+  __
+  indices:
+  - PRIMARY with columns: codDep
+  - fk_DEPARTAMENTO_EMPLEADOS1_idx with columns: jefDEp
+  __
+  foreign keys:
+  - fk_DEPARTAMENTO_EMPLEADOS1 with columns: jefDEp, referred table: empleados with columns: codEmp
+    - action on update: none
+    - action on delete: none
+  __
+  attributes:
+  - engine: InnoDB
+  - default character set: utf8
+  __
+Table `mydb`.`departamento_copy1` was created
+  columns:
+  - codDep of type INT
+  - nomDep of type VARCHAR
+  - numDespDep of type INT
+  - jefDEp of type INT
+  __
+  indices:
+  - PRIMARY with columns: codDep
+  - fk_DEPARTAMENTO_EMPLEADOS1_idx with columns: jefDEp
+  __
+  foreign keys:
+  - fk_DEPARTAMENTO_EMPLEADOS10 with columns: jefDEp, referred table: empleados_copy1 with columns: codEmp
+    - action on update: none
+    - action on delete: none
+  __
+  attributes:
+  - engine: InnoDB
+  - default character set: utf8
+  __
+Table `mydb`.`departamentos` was created
+  columns:
+  - codDep of type INT
+  - nomDep of type VARCHAR
+  - numEmpDep of type INT
+  __
+  indices:
+  - PRIMARY with columns: codDep
+  __
+  attributes:
+  - engine: InnoDB
+  - default character set: utf8
+  __
+Table `mydb`.`edif_dep` was created
+  columns:
+  - codEdf of type INT
+  - codDep of type INT
+  - numDespOcu of type INT
+  __
+  indices:
+  - PRIMARY with columns: codEdf, codDep
+  - fk_EDIFICOS_has_DEPARTAMENTOS_DEPARTAMENTOS1_idx with columns: codDep
+  - fk_EDIFICOS_has_DEPARTAMENTOS_EDIFICOS1_idx with columns: codEdf
+  __
+  foreign keys:
+  - fk_EDIFICOS_has_DEPARTAMENTOS_DEPARTAMENTOS1 with columns: codDep, referred table: departamentos with columns: codDep
+    - action on update: none
+    - action on delete: none
+  - fk_EDIFICOS_has_DEPARTAMENTOS_EDIFICOS1 with columns: codEdf, referred table: edificos with columns: codEdf
+    - action on update: none
+    - action on delete: none
+  __
+  attributes:
+  - engine: InnoDB
+  - default character set: utf8
+  __
+Table `mydb`.`edificos` was created
+  columns:
+  - codEdf of type INT
+  - nomEdf of type VARCHAR
+  - dirEdf of type VARCHAR
+  - nDespOcuEdf of type INT
+  - codDep of type INT
+  __
+  indices:
+  - PRIMARY with columns: codEdf
+  - fk_EDIFICOS_DEPARTAMENTOS1_idx with columns: codDep
+  __
+  foreign keys:
+  - fk_EDIFICOS_DEPARTAMENTOS1 with columns: codDep, referred table: departamentos with columns: codDep
+    - action on update: none
+    - action on delete: none
+  __
+  attributes:
+  - engine: InnoDB
+  - default character set: utf8
+  __
+Table `mydb`.`empleados` was created
+  columns:
+  - codEmp of type INT
+  - nomEmp of type VARCHAR
+  - dniEmp of type VARCHAR
+  - edadEmp of type INT
+  - salEmp of type VARCHAR
+  - codDep of type INT
+  __
+  indices:
+  - PRIMARY with columns: codEmp
+  - fk_EMPLEADOS_DEPARTAMENTO1_idx with columns: codDep
+  __
+  foreign keys:
+  - fk_EMPLEADOS_DEPARTAMENTO1 with columns: codDep, referred table: departamento with columns: codDep
+    - action on update: none
+    - action on delete: none
+  __
+  attributes:
+  - engine: InnoDB
+  - default character set: utf8
+  __
+Table `mydb`.`empleados_copy1` was created
+  columns:
+  - codEmp of type INT
+  - nomEmp of type VARCHAR
+  - dniEmp of type VARCHAR
+  - edadEmp of type INT
+  - salEmp of type VARCHAR
+  - codDep of type INT
+  __
+  indices:
+  - PRIMARY with columns: codEmp
+  - fk_EMPLEADOS_DEPARTAMENTO1_idx with columns: codDep
+  __
+  foreign keys:
+  - fk_EMPLEADOS_DEPARTAMENTO10 with columns: codDep, referred table: departamento_copy1 with columns: codDep
+    - action on update: none
+    - action on delete: none
+  __
+  attributes:
+  - engine: InnoDB
+  - default character set: utf8
+  __
+Table `mydb`.`libros` was created
+  columns:
+  - isbnLib of type INT
+  - titLib of type VARCHAR
+  __
+  indices:
+  - PRIMARY with columns: isbnLib
+  __
+  attributes:
+  - engine: InnoDB
+  - default character set: utf8
+  __
+Table `mydb`.`peliculas` was created
+  columns:
+  - codPel of type INT
+  - titPel of type VARCHAR
+  - anEstPel of type DATE
+  - criPel of type VARCHAR
+  - carPel of type VARCHAR
+  - numCopyPel of type INT
+  __
+  indices:
+  - PRIMARY with columns: codPel
+  __
+  attributes:
+  - engine: InnoDB
+  - default character set: utf8
+  __
+Table `mydb`.`poligonos` was created
+  columns:
+  - codPol of type INT
+  - nomPol of type VARCHAR
+  - ciuPol of type VARCHAR
+  - codEdf of type INT
+  __
+  indices:
+  - PRIMARY with columns: codPol
+  - fk_POLIGONOS_EDIFICOS1_idx with columns: codEdf
+  __
+  foreign keys:
+  - fk_POLIGONOS_EDIFICOS1 with columns: codEdf, referred table: edificos with columns: codEdf
+    - action on update: none
+    - action on delete: none
+  __
+  attributes:
+  - engine: InnoDB
+  - default character set: utf8
+  __
+Table `mydb`.`prestamos` was created
+  columns:
+  - CLIENTES_codCli of type INT
+  - PELICULAS_codPel of type INT
+  - fechPres of type DATE
+  __
+  indices:
+  - PRIMARY with columns: CLIENTES_codCli, PELICULAS_codPel
+  - fk_CLIENTES_has_PELICULAS_PELICULAS1_idx with columns: PELICULAS_codPel
+  - fk_CLIENTES_has_PELICULAS_CLIENTES1_idx with columns: CLIENTES_codCli
+  __
+  foreign keys:
+  - fk_CLIENTES_has_PELICULAS_CLIENTES1 with columns: CLIENTES_codCli, referred table: clientes with columns: codCli
+    - action on update: none
+    - action on delete: none
+  - fk_CLIENTES_has_PELICULAS_PELICULAS1 with columns: PELICULAS_codPel, referred table: peliculas with columns: codPel
+    - action on update: none
+    - action on delete: none
+  __
+  attributes:
+  - engine: InnoDB
+  - default character set: utf8
+  __
+Table `mydb`.`rel_lib_aut` was created
+  columns:
+  - isbnLib of type INT
+  - codAut of type INT
+  - nomEdit of type VARCHAR
+  __
+  indices:
+  - PRIMARY with columns: isbnLib, codAut
+  - fk_LIBROS_has_AUTORES_AUTORES1_idx with columns: codAut
+  - fk_LIBROS_has_AUTORES_LIBROS1_idx with columns: isbnLib
+  __
+  foreign keys:
+  - fk_LIBROS_has_AUTORES_AUTORES1 with columns: codAut, referred table: autores with columns: codAut
+    - action on update: none
+    - action on delete: none
+  - fk_LIBROS_has_AUTORES_LIBROS1 with columns: isbnLib, referred table: libros with columns: isbnLib
+    - action on update: none
+    - action on delete: none
+  __
+  attributes:
+  - engine: InnoDB
+  - default character set: utf8
+  __
+Table `mydb`.`soc_biblio` was created
+  columns:
+  - numSoc of type INT
+  - nomSoc of type VARCHAR
+  - apeSoc of type VARCHAR
+  - telSoc of type VARCHAR
+  __
+  indices:
+  - PRIMARY with columns: numSoc
+  __
+  attributes:
+  - engine: InnoDB
+  - default character set: utf8
+  __
+----------------------------------------------
+End of MySQL Workbench Report

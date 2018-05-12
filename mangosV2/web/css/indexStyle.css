@@ -1,0 +1,195 @@
+/*
+ * CSS Web Mangos de la Axarquía
+ * Author: Ale Ruiz;
+ *
+ */
+
+/*
+ * Colores:
+ * Violeta Fuerte: #6B2947
+ * Violeta Claro: #F9D8FA;
+ * Amarillo Fuerte: #E8CC23;
+ * Amarillo Suave: #FFFFC1;
+ * Magenta Fuerte: #BF224F;
+ */
+
+/* Letras importadas */
+@import url('https://fonts.googleapis.com/css?family=Hind+Madurai|Noto+Serif');
+/* ---------------- */
+
+* {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	font-family: Hind Madurai, sans-serif;  }
+
+.header-index {
+  height: initial;
+}
+
+/* Logo */
+.cont-slider {
+	border-bottom: 8px solid #6B2947;
+}
+
+.cont-logo {
+	position: absolute;
+	width: 100%;
+	top:0%;
+	text-align: center;
+}
+
+.marco-logo {
+	background-color: rgba(255, 255, 255, 0.8); 
+	display: inline-block;
+	padding: 10px;
+	border: 5px solid #6B2947;
+	border-top: initial;
+	border-radius: 0px 0px 7px 7px;
+}
+.logo { margin: 0px auto;  }
+
+.tile-linea { 
+	width: 100px;
+	height: 20px;
+	background-image: url("../ima/tile_linea.jpg");
+}
+
+/* Menu Redes Sociales */
+.menu-rs {
+	position: absolute;
+	top: 0px;
+	right: 25px; 
+	z-index: 4;
+	background-color: #E8CC23;
+	padding: 10px;
+	border-radius: 0px 0px 10px 10px;
+}
+
+.ico-rs {
+	height: 40px;
+}
+
+/* Main y Wrapper */
+.main { }
+
+.wrapper {
+	margin: 20px 4%;
+}
+
+section {
+	text-align: center;
+}
+
+ .zonaPrincipal {
+	width: 28%;
+	display:
+	inline-block;
+	margin: 10px;
+	vertical-align: top;
+	border: 2px solid #F9D8FA;
+	padding: 10px;
+}
+
+.zonaPrincipal a {
+	text-decoration: none;
+	color: initial;
+}
+
+section .zonaPrincipal img {
+	width: 80%;
+}
+
+section .zonaPrincipal h4 {
+	text-align: initial;
+	font-family: Noto Serif, serif;
+	border-top: 2px solid #F9D8FA;
+	padding: 5px 0px;
+	color: #6B2947;
+}
+
+section .zonaPrincipal p {
+	text-align: justify;
+}
+
+
+/* Footer */
+footer {
+	background-color: #6B2947;
+	border-top: 8px solid #F9D8FA;
+}
+
+.cont-footer {
+	width: 100%;
+	text-align: center;
+}
+
+.info-footer {
+	width: 28%;
+	display: inline-block;
+	text-align: justify;
+	color: #F9D8FA;
+	vertical-align: top;
+	padding: 20px;
+}
+
+.info-footer ul {
+	list-style: none;
+}
+.info-footer ul li, .info-footer p {
+	padding-left: 20px;
+}
+
+/* Repsonsive */
+@media screen and (max-width: 600px) {
+	.menu-rs {
+		position: initial;
+		text-align: center;
+		padding: 10px 0px;
+		border-radius: initial;
+	}
+
+	.cont-logo { position: relative; top: initial; left:initial; }
+	
+	.marco-logo { background-color: inherit; border: initial; }
+	
+	.logo { width: 100%; }
+
+	/* Main y Wrapper */
+	.main { }
+
+	.wrapper {
+		margin: 20px 0px;
+	}
+
+	section {
+		text-align: initial;
+	}
+
+	.zonaPrincipal {
+		width: initial;
+		margin: 5px;
+		border-left: 0px;
+		border-right: 0px;
+		padding: 10px;
+		text-align: center;
+	}
+
+	section .zonaPrincipal img {
+		width: 90%;
+	}
+
+	/* Footer */
+	.cont-footer {
+		width: 100%;
+		text-align: initial;
+	}
+
+	.info-footer {
+		width: initial;
+		padding: 5px;
+	}
+
+	.info-footer ul { list-style: none; }
+	.info-footer ul li, .info-footer p { padding-left: 20px; }
+}

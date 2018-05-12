@@ -1,0 +1,39 @@
+/*
+ * CSS Slider
+ */
+.cont-slider{
+	max-height: 300px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.cont-slider-display:hover .display-hover{display:inline-block}
+
+.cont-slider-display{position:relative}
+
+/* Botones */
+.boton-sld:hover{
+	color:#F9D8FA!important;
+	background-color:#6B2947!important
+}
+
+.btn-negro, .w3-hover-black:hover {
+	color:#6B2947!important;
+	background-color:rgba(249, 216, 250, 0.6)!important;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+}
+
+.btn-slider-izq{position:absolute;top:65%; left:5%;}
+.btn-slider-der{position:absolute;top:65%; right:5%; }
+
+.btn-slider-izq, .btn-slider-der {
+	z-index: 3;
+	transform:translate(0%,-50%);
+	-ms-transform:translate(0%,-50%)
+}
+
+/* foto slider */
+
+.foto_slider { width: 100%; margin:0px auto; }

@@ -1,0 +1,183 @@
+/*
+ * CSS Web Mangos de la Axarquía
+ * Author: Ale Ruiz;
+ *
+ */
+/* Alerta */
+.cont-alerta { color: #F00; }
+
+/* Formulario Inserción Mangos */
+.int_mangos {
+    border: 1px solid #6B2947;
+    border-radius: 5px;
+    padding: 10px 10px 10px 25px;
+    margin-bottom: 15px;
+}
+
+/* Formulario Grupos */
+.form-group-idMangos, .form-group-nombreVar, .form-group-peso,
+.form-group-fechaIniAprox, .form-group-precio, .form-group-stock,
+.form-group-boton,
+.form-group-idComprador, .form-group-nombreComp, .form-group-NIFComp,
+.form-group-tipoComp, .form-group-dirEnvioComp, .form-group-emailComp,
+.form-group-tlfComp,
+.form-group-codDetFact, .form-group-numFact,
+.form-group-precioTotal, .form-group-cantidad
+{
+    display: inline-block; vertical-align: top;
+}
+/* Variedad */
+.form-group-idMangos { max-width: 10%; }
+.form-group-nombreVar { max-width: 20%; }
+.form-group-peso { max-width: 10%; }
+.form-group-fechaIniAprox { max-width: 20%; }
+.form-group-precio { max-width: 10%; }
+.form-group-stock { max-width: 10%; }
+.form-group-boton { vertical-align: bottom; }
+
+input[type="text"] {
+    padding: 6px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    /*width: 33%;*/
+}
+
+/* Comprador */
+.form-group-idComprador {
+    width: 7%;
+}
+
+/* Factura*/
+.btn { background-color: #6B2947; border-color: grey; }
+.btn:hover { background-color: #F9D8FA; border-color: #6B2947}
+
+/* Listado y Formulario Actualizacion y eliminación */
+form { /*border: 1px solid red;*/ }
+.table-titles {
+    background-color: #6B2947;
+    color: #FFF;
+}
+
+.row-list-btn { 
+    display: inline-block; width: 10%;
+    padding-left: 2%;
+}
+.text-variedad {  }
+
+/* Líneas de Forularios */
+/* Listado Variedad */
+.row-list { display: inline-block; width: 10%; vertical-align: top;}
+.row-list-idMangos { display: inline-block; width: 6%; vertical-align: top;}
+.row-list-nombreVar { display: inline-block; width: 11%; vertical-align: top;}
+.row-list-peso { display: inline-block; width: 8%; vertical-align: top;}
+.row-list-fechaIniAprox { display: inline-block; width: 13%; vertical-align: top;}
+.row-list-precio { display: inline-block; width: 9%; vertical-align: top;}
+/* Listado Clientes */
+.row-list-idComprador { display: inline-block; width: 6%; vertical-align: top;}
+.row-list-nombreComp { display: inline-block; width: 15%; vertical-align: top; }
+.row-list-NIFComp { display: inline-block; width: 8%; vertical-align: top;}
+.row-list-tipoComp { display: inline-block; width: 8%; vertical-align: top;}
+.row-list-dirEnvioComp { display: inline-block; width: 15%; vertical-align: top;}
+.row-list-email { display: inline-block; width: 12%; vertical-align: top;}
+.row-list-tlfComp { display: inline-block; width: 9%; vertical-align: top;}
+/* Listado Pedidos */
+.row-list-numFact { display: inline-block; width: 12%; vertical-align: top;}
+.row-list-fechaFact { display: inline-block; width: 15%; vertical-align: top;}
+.row-list-precioTot { display: inline-block; width: 12%; vertical-align: top;}
+
+/* Imputs de Formularios */
+.input-list-form-idMangos { display: inline-block; }
+.input-list-form-nombreVar { display: inline-block; }
+.input-list-form-peso { display: inline-block; }
+.input-list-form-fechaIniAprox { display: inline-block; }
+.input-list-form-precio { display: inline-block; }
+.input-list-form-boton { display: inline-block; }
+.input-list-form-idComprador { display: inline-block; }
+.input-list-form-nombreComp { display: inline-block; }
+.input-list-form-NIFComp { display: inline-block; }
+.input-list-form-tipoComp { display: inline-block; }
+.input-list-form-dirEnvioComp { display: inline-block; }
+.input-list-form-emailComp { display: inline-block; }
+.input-list-form-tlfComp { display: inline-block; }
+
+/* Zona Pedidos */
+.form-group-numFact-row {
+    width: 6%;
+    display: inline-block;
+}
+.form-group-codDetFact {
+    width: 6%;
+}
+
+.varElegida {
+  background-color: yellow;
+}
+
+.form-group-cantidad {
+    width: 15%;
+    display: inline-block;
+}
+.form-group-precioTotal {
+    width: 15%;
+    display: inline-block;
+}
+
+
+/* Etiquetas de Advertencias */
+.text-muted { display: none; }
+
+/*Zona insertar líneas */
+.zona_comprador {
+}
+
+.contRow {
+  margin-bottom: 8px;
+}
+
+.intRow-CDF {
+  width: 6%;
+  margin-right: 0.5%;
+  display: inline-block;
+}
+
+.intRow-NF {
+  width: 6%;
+  margin-right: 0.5%;
+  display: inline-block;
+}
+
+.intRow-IDM {
+  width: 10%;
+  margin-right: 0.5%;
+  display: inline-block;
+}
+
+.intRow-variedad {
+  width: 12%;
+  margin-right: 0.5%;
+  display: inline-block;
+}
+
+.intRow-precio {
+  width: 10%;
+  margin-right: 0.5%;
+  display: inline-block;
+}
+
+.intRow-cantidad {
+  width: 15%;
+  margin-right: 0.5%;
+  display: inline-block;
+}
+
+.intRow-PT {
+  width: 15%;
+  margin-right: 0.5%;
+  display: inline-block;
+}
+
+.intRow-btnElim {
+  width: 15%;
+  margin-right: 0.5%;
+  display: inline-block;
+}

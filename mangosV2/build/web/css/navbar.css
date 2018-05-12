@@ -1,0 +1,106 @@
+/*
+ * CSS mi_navbar
+ */
+
+/* Barra de Navegación */
+.contenedor-mi_navbar {
+  text-align: center;
+  z-index: 2;
+  background-color: #FFFFC1;
+}
+
+.mi_navbar li, .desplegable, .desplegable-content {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.mi_navbar li, .desplegable { /* Elementos del mi_navbar */
+  display: inline-block;
+  width: 120px; /* Mantienen tamaño hover*/
+  height: 18px; /* Mantienen tamaño hover*/
+}
+
+.mi_navbar li:hover, .desplegable:hover {
+  background-color: #F9D8FA;
+}
+
+/*.active {
+  background-color: #F9D8FA;
+}*/
+
+.mi_navbar .icon {
+  display: none;
+}
+
+/* Enlaces */
+.link-mi_navbar {
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Submenu */
+.cont-desplegable .desplegable-content {
+  display: none; width: 120px;
+}
+
+.desplegable:hover .desplegable-content {
+    display: block;
+    float: left;
+    left:-11px;
+    position: relative;
+    background-color: #FFFFC1;; 
+}
+.desplegable:hover .desplegable-content:hover {
+  background-color: #F9D8FA;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .cont-mi_navbar {
+      margin-bottom: 10px;
+      background-color: initial;
+  }
+
+  .mi_navbar li/*:not(:first-child)*/, .desplegable {
+    display: none;
+    width: initial;
+    background-color: #FFFFC1;
+  }
+
+  .mi_navbar li.icon { /* Icono */
+    clear: both;
+    display: block;
+    background-color: #F9D8FA;
+    width: 150px;
+    cursor: pointer;
+    margin: 0 auto;
+    } 
+  
+  /* Cuando Java convierte a responsive */
+  .mi_navbar.responsive {
+    position: block;
+  }
+
+  .mi_navbar.responsive .icon {
+  }
+  
+  .mi_navbar.responsive li, .mi_navbar.responsive .desplegable { 
+    display: block;
+    clear: both;
+  }
+
+  .mi_navbar.responsive .desplegable-content {
+    position: initial;
+    display: none;
+    width: initial;
+  }
+
+  .desplegable:hover .desplegable-content {
+    display: block; 
+    clear: both;
+    position: relative;
+    width: 100%;
+  }
+
+}
