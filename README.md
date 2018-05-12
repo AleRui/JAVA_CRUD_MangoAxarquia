@@ -66,7 +66,7 @@ Ejercicios de las asignaturas **Programación en Java y Base de Datos MySQL**
 	</tr>
 	<tr>
 		<td width="300">
-			Uso de la variable Session en request.session() para pasar elementos de un psj a otro.
+			Uso de la variable Session en request.session() para pasar elementos de un jsp a otro.
 		</td>
 		<td width="450"><img height="250" src="imas/ArrayList_01.png" alt="ArrayList_01"></td>
 	</tr>
@@ -90,7 +90,7 @@ Ejercicios de las asignaturas **Programación en Java y Base de Datos MySQL**
 	</tr>
 	<tr>
 		<td width="300">
-			Consulta de pedido.
+			Añadida Vista de Consulta de pedidos.
 		</td>
 		<td width="450"><img height="250" src="imas/listaPedidos.png" alt="listaPedidos"></td>
 	</tr>
