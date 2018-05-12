@@ -54,7 +54,7 @@ Ejercicios de las asignaturas **Programación en Java y Base de Datos MySQL**
 	  	conjLineas = (ArrayList<Linea>) request.getSession().getAttribute("conjLineas");
 			~~~
 		</div>
-		<div width="40%"><img height="250" src="imas/ArrayList.png" alt="ArrayList"></div>
+		<div width="40%"><img height="250" src="imas/ArrayList_01.png" alt="ArrayList"></div>
 	</li>
 	<li>
 		<div width="40%">
@@ -62,7 +62,7 @@ Ejercicios de las asignaturas **Programación en Java y Base de Datos MySQL**
 			La función esta en la ruta: Source Packages/mangoFunciones/operar.java<br>
 			Ver archivos: crearPedido.jsp - ingresaLineaPedido.jsp - ingresaPedido.jsp
 		</div>
-		<div width="40%"><img height="250" src="imas/compVacio.png" alt="Clase Linea"></div>
+		<div width="40%"><img height="250" src="imas/compVacio.jpg" alt="compVacio"></div>
 	</li>
 	<li>
 		<div width="40%">
@@ -74,32 +74,31 @@ Ejercicios de las asignaturas **Programación en Java y Base de Datos MySQL**
 		<div width="40%">
 			Eliminar elementos de la variable Session cuando se haya terminado de realizar un pedido o al salir a otra zona de la web.
 		</div>
-		<div width="40%"><img height="250" src="#" alt="Clase Linea"></div>
 	</li>
 	<li>
 		<div width="40%">
 			Mantener el usuario mientras va añadiendo líneas javascript+java.<br>
 			Ver archivos: crearPedido.jsp - ingresaLineaPedido.jsp - ingresaPedido.jsp - formulario.js
 		</div>
-		<div width="40%"><img height="250" src="imas/ArrayList.png" alt="Clase Linea"></div>
+		<div width="40%"><img height="250" src="imas/ArrayList_01.png" alt="ArrayList_01"></div>
 	</li>
 	<li>
 		<div width="40%">
 			Ingreso de Factura con varias Líneas de pedido.
 		</div>
-		<div width="40%"><img height="250" src="imas/ArrayList.png" alt="Clase Linea"></div>
+		<div width="40%"><img height="250" src="imas/ArrayList_01.png" alt="ArrayList_01"></div>
 	</li>
 	<li>
 		<div width="40%">
 			Consulta de pedido.
 		</div>
-		<div width="40%"><img height="250" src="imas/listaPedidos.png" alt="Clase Linea"></div>
+		<div width="40%"><img height="250" src="imas/listaPedidos.png" alt="listaPedidos"></div>
 	</li>
 	<li>
 		<div width="40%">
 			Validaciones de campos desde el navegador con javascript. Observar campos de Clientes: no se admite un DNI o Teléfono de una longitud distinta de 9. (" Para una futura versión esto se debería de controlar con patrones").
 		</div>
-		<div width="40%"><img height="250" src="imas/alertaNIF.jpg" alt="Clase Linea"></div>
+		<div width="40%"><img height="250" src="imas/alertaNIF.jpg" alt="alertaNIF"></div>
 	</li>
 	<li>
 		<div width="40%">
@@ -110,19 +109,19 @@ Ejercicios de las asignaturas **Programación en Java y Base de Datos MySQL**
 				<li>No se puede introducir un pedido sin cantidad.</li>
 			</ul>
 		</div>
-		<div width="40%"><img height="250" src="imas/pedidoSinComp.png" alt="Clase Linea"></div>
+		<div width="40%"><img height="250" src="imas/pedidoSinComp.png" alt="pedidoSinComp"></div>
 	</li>
 	<li>
 		<div width="40%">
 			Ventanas de alerta a la hora de borrar una variedad, un cliente o un pedido.
 		</div>
-		<div width="40%"><img height="250" src="imas/alertaBorrarPedido.png" alt="Clase Linea"></div>
+		<div width="40%"><img height="250" src="imas/alertaBorrarPedido.png" alt="alertaBorrarPedido"></div>
 	</li>
 	<li>
 		<div width="40%">
 			Creación de alertas para mostrar al usuario porque no se ha podido realizar una tarea.
 		</div>
-		<div width="40%"><img height="250" src="imas/pedidoSinComp.jpg" alt="Clase Linea"></div>
+		<div width="40%"><img height="250" src="imas/pedidoSinComp.jpg" alt="pedidoSinComp"></div>
 	</li>
 
 ## Cambios Propuestas para Version 3.0:
