@@ -4,6 +4,7 @@
     Author     : Solbyte
 --%>
 
+<%@page import="mangoObjetos.PedidoRealizado"%>
 <%--  IMPORTAR Librerias --%>
 <%@page import="java.sql.Statement"%>
 <%@page import="java.sql.ResultSet"%>
@@ -135,6 +136,7 @@
           <%
 	      }
 	    }
+
 	    conexion.close();
           %>
         </td>

@@ -36,6 +36,8 @@
           <a class="dropdown-item" href="../vista/formComprador.jsp">Clientes</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="../vista/listaPedidos.jsp">Pedidos</a>
+	  <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="../vista/estadistica.jsp">Estadistica</a>
           <!--<div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Ver Pedidos</a>-->
         </div>

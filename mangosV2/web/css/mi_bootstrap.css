@@ -181,3 +181,15 @@ form { /*border: 1px solid red;*/ }
   margin-right: 0.5%;
   display: inline-block;
 }
+
+/* Estadística */
+.cont-lista {
+  width: 250px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
+}
+
+.lista {
+  list-style: none;
+}

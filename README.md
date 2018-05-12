@@ -123,6 +123,12 @@ Ejercicios de las asignaturas **Programación en Java y Base de Datos MySQL**
 		</td>
 		<td width="450"><img height="250" src="imas/pedidoSinComp.png" alt="pedidoSinComp"></td>
 	</tr>
+	<tr>
+		<td width="300">
+			Creación de la zona de Estadística y uso de HashMap en ella.
+		</td>
+		<td width="450"><img height="250" src="imas/HashMap.png" alt="HashMap"></td>
+	</tr>
 </table>
 
 ## Cambios Propuestas para Version 3.0:
